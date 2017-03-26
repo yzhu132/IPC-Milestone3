@@ -70,15 +70,15 @@ Uncomment what you want to test below:
 *****************************/
 int main() {
    printf("================================\n");
-   //searchTest();
+  // searchTest();
    printf("================================\n");
-   //updateTest();
+  // updateTest();
    printf("================================\n");
-   //addTest();
+  // addTest();
    printf("================================\n");
-   //addOrUpdateTest();
+//addOrUpdateTest();
    printf("================================\n");
-   //adjustQtyTest();
+   adjustQtyTest();
    printf("================================\n");
    return 0;
 }
@@ -145,7 +145,7 @@ void addTest() {
       "   Is Taxed : y\n"
       "Add Item? (Y)es/(N)o: y\n");
    addItem(GI, &GNoOfRecs, 222); //y
-   printf("New item is added, No of itemsinstorage: %d\n", GNoOfRecs);
+   printf("New item is added, No of items in storage: %d\n", GNoOfRecs);
    displayItem(GI[GNoOfRecs - 1], FORM);
    printf("Adding 333: \n");
    addItem(GI, &GNoOfRecs, 333);
@@ -173,13 +173,13 @@ void adjustQtyTest() {
    printf("================AdjustQty Test:\n");
    printf("Invalid SKU Test; Enter 444:\n");
    adjustQuantity(GI, GNoOfRecs, STOCK);
-   printf("Aborting Entry test; Enter 731 and then 0:\n");
+   printf("Aborting Entry test; Enter 649 and then 0:\n");
    adjustQuantity(GI, GNoOfRecs, CHECKOUT);
-   printf("Checking out with low quantity warning; Enter 731 and then 90:\n");
+   printf("Checking out with low quantity warning; Enter 649 and then 12:\n");
    adjustQuantity(GI, GNoOfRecs, CHECKOUT);
-   printf("Stocking; Enter 731 and then 50:\n");
+   printf("Stocking; Enter 649 and then 50:\n");
    adjustQuantity(GI, GNoOfRecs, STOCK);
-   displayItem(GI[16], FORM);
+   displayItem(GI[15], FORM);
 }
 /* End test functions
 *********************************************************************/
