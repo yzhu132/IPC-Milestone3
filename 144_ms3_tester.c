@@ -95,7 +95,7 @@ void searchTest() {
 void updateTest() {
    struct Item I = { 11.11,111,1,11,1,"Ones!" };
    printf("================Update Test:\n");
-   printf("Enter the follwoing: \n");
+   printf("Enter the following: \n");
    printf(
       "         SKU: 111\n"
       "        Name: Grape\n"
@@ -107,7 +107,7 @@ void updateTest() {
    updateItem(&I);
    printf("Unchanged Item Data:\n");
    displayItem(I, FORM);
-   printf("Enter the follwoing: \n");
+   printf("Enter the following: \n");
    printf(
       "         SKU: 111\n"
       "        Name: Grape\n"
@@ -123,7 +123,7 @@ void updateTest() {
 void addTest() {
    printf("================Add Test:\n");
    printf("Total items in Storage: %d, Max no: %d\n", GNoOfRecs, MAX_ITEM_NO);
-   printf("Enter the follwoing: \n");
+   printf("Enter the following: \n");
    printf(
       "         SKU: 222\n"
       "        Name: Grape\n"
@@ -135,7 +135,7 @@ void addTest() {
    addItem(GI, &GNoOfRecs, 222); //n
    printf("Garbage here! Nothing is added, No of items in storage: %d\n", GNoOfRecs);
    displayItem(GI[GNoOfRecs], FORM);
-   printf("Enter the follwoing: \n");
+   printf("Enter the following: \n");
    printf(
       "         SKU: 222\n"
       "        Name: Grape\n"
